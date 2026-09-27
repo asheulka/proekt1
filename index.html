@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Психолог Юлия</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <div class="hero-section" data-aos="fade-in">
+    <h1>Психолог</h1>
+    <p>Поддержка и консультации для вашего психоэмоционального благополучия</p>
+  </div>
+</header>
+
+<!-- О СЕБЕ -->
+<section id="about">
+
+  <img src="img/yulia.jpg" class="profile-photo">
+
+  <h2>Обо мне</h2>
+
+  <p class="about-text">
+    Меня зовут <strong>Юлия</strong>, я психолог с опытом более <strong>5 лет</strong>.
+    Помогаю справляться с тревогой, стрессом и сложностями в отношениях.
+  </p>
+
+</section>
+
+<!-- УСЛУГИ -->
+<section id="services">
+  <h2>Услуги</h2>
+
+  <div class="service-block">
+    <span>💬</span>
+    <div>
+      <h3>Консультации для взрослых</h3>
+      <p>Помощь в решении личных и межличностных проблем.</p>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <span>👨‍👩‍👧‍👦</span>
+    <div>
+      <h3>Работа с семьями</h3>
+      <p>Разрешение конфликтов и улучшение общения.</p>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <span>💼</span>
+    <div>
+      <h3>Карьерный коучинг</h3>
+      <p>Поиск себя и развитие в профессии.</p>
+    </div>
+  </div>
+
+  <p class="price">60 минут — 3000 ₽</p>
+</section>
+
+<!-- ФОРМА -->
+<section id="contact">
+  <h2>Записаться на консультацию</h2>
+
+  <form class="contact-form" action="https://formspree.io/f/mdabalnn" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Кратко опишите ваш запрос" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+
+  <div class="center">
+    <a href="https://t.me/username" class="cta-btn">Написать в Telegram</a>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ В САМОМ НИЗУ -->
+<section id="testimonials">
+  <h2>Отзывы клиентов</h2>
+
+  <div class="testimonial">
+    <p>"Работа помогла наладить отношения и лучше понять себя."</p>
+    <span>- Иван, 35 лет</span>
+  </div>
+
+  <div class="testimonial">
+    <p>"Удалось справиться с выгоранием и найти мотивацию."</p>
+    <span>- Ольга, 28 лет</span>
+  </div>
+</section>
+
+<script>
+  AOS.init({
+    duration: 1000,
+  });
+</script>
+
+</body>
+</html>
