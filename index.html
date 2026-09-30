@@ -105,5 +105,33 @@
   });
 </script>
 
+<script>
+  const contactForm = document.getElementById('contactForm');
+  const formSuccessMessage = document.getElementById('formSuccessMessage');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(response => {
+        if (response.ok) {
+          contactForm.style.display = 'none';
+          formSuccessMessage.style.display = 'block';
+        } else {
+          alert('Не удалось отправить форму. Попробуйте ещё раз или напишите в Telegram.');
+        }
+      })
+      .catch(() => {
+        alert('Не удалось отправить форму. Проверьте подключение к интернету.');
+      });
+  });
+</script>
+  
 </body>
 </html>
