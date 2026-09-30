@@ -70,19 +70,19 @@
 
 <!-- ФОРМА -->
 <section id="contact">
-  <h2>Записаться на консультацию</h2>
-
-  <form class="contact-form" action="https://formspree.io/f/mdabalnn" method="POST">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Кратко опишите ваш запрос" required></textarea>
-    <button type="submit">Отправить</button>
-  </form>
-
-  <div class="center">
-    <a href="https://t.me/username" class="cta-btn">Написать в Telegram</a>
-  </div>
+    <h2>Записаться на консультацию</h2>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mdabalnn" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Кратко опишите ваш запрос" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    <p id="formSuccessMessage" style="display:none;">Спасибо! Ваша заявка отправлена, я свяжусь с вами в ближайшее время.</p>
+    <div class="center">
+        <a href="https://t.me/username" class="cta-btn">Написать в Telegram</a>
+    </div>
 </section>
+  
 
 <!-- ОТЗЫВЫ В САМОМ НИЗУ -->
 <section id="testimonials">
